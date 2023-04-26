@@ -4,6 +4,7 @@
   font-family: 'Josefin sans',sans-serif;
   box-sizing: border-box;
   }
+  /*Home page*/
   .hero{
    height: 100vh;
    width: 100%;
@@ -116,7 +117,7 @@
     right: 6px;
     
     }
-   /* about me*/
+   /* ------------------------------------------------------about me---------------------------------------------*/
    .about{
     background-color:#191919;
     /* height: 100vh;
@@ -161,6 +162,12 @@ margin-bottom: 40px;
 
 
 }
+.about .details h1{
+  color: #e7e1e1;
+  font-family: 'Inter';
+  font-size: 40px;
+  
+ }
 
 .about .details p{
  color: #e7e1e1;
@@ -245,7 +252,7 @@ a{
  }
  .title h2{
   color: white;
-  font-size: 55px;
+  font-size: 40px;
   width: 1130px;
   margin: 30px auto;
   text-align:center ;
@@ -395,7 +402,7 @@ font-weight: 300;
 .contactForm{
  width: 40%;
  padding: 40px;
-background: #fff;
+background:  white;
 
 }
 .contactForm h2{
@@ -450,7 +457,7 @@ background: #fff;
  }
  .contactForm .inputBox input[type="submit"]{
     width: 100px;
-    background: #00bcd4;
+    background:#e91e63 ;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -460,7 +467,321 @@ background: #fff;
 
  }
 
+ /* project---------------------------------------------------------------------------------------------*/
+
+ .container{
+  background-color:#191919;
+  width: 100%;
+  padding: 100px 0px;
+ 
+ 
+ }
 
 
 
-    
+ 
+ .sub-title{
+    color: white;
+    font-size: 40px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align:center ;
+ }
+
+
+  
+ 
+
+ .work-list{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 30px;
+  margin-top: 50px;
+ }
+
+ .work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+
+
+ }
+ .work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  
+
+ }
+
+ .layer{
+width: 100%;
+height: 0;
+background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+border-radius: 10px;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+text-align: center;
+font-size: 14px ;
+transition: height 0.5s;
+
+
+
+ }
+ .layer h3{
+font-weight: 500;
+margin-bottom: 20px;
+
+ }
+ .layer a{
+  margin: top 20px; 
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+
+ }
+ .work:hover img{
+  transform: scale(1.1);
+ }
+ .work:hover .layer{
+  height: 100%;
+
+
+ }
+ .btn{
+
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+ }
+ .btn:hover{
+
+  background: #ff004f;
+
+ }
+
+
+ .contact-left{
+
+
+  flex-basis: 35%;
+
+
+ }
+ .contact-right{
+
+
+  flex-basis: 60%;
+ }
+
+
+
+
+ /* skils*/
+
+
+ .container3{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 30px 10%;
+  background-color: #101010;
+  
+}
+.container3 .main-title{
+	max-width: 700px;
+	margin: 0px auto;
+	text-align: center;
+	font-family: helvetica;
+}
+.container3 .main-title h1{
+	position: relative;
+	font-size: 40px;
+	color: white;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+.container3 .main-title h1::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	top: 125%;
+	left: 0;
+	background-color: white;
+}
+.container3 .main-title h1::after{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 3px;
+	background-color: #d03645;
+	top: calc(125% - 1px);
+	left: 50%;
+	transform: translateX(-50%);
+}
+.main-title p{
+	color: white;
+}
+.container3 .row{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+.row .col{
+	flex-basis: 46%;
+}
+.row .sub-title h2{
+	position: relative;
+	color: white;
+	font-size: 22px;
+	font-family: helvetica;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+.row .sub-title h2::before{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 1px;
+	top: 125%;
+	left: 0;
+	background-color: white;
+}
+.row .sub-title h2::after{
+	content: '';
+	position: absolute;
+	width: 25%;
+	height: 3px;
+	top: calc(125% - 1px);
+	left: 0;
+	background-color: #d03645;
+}
+.subject{
+	font-size: 18px;
+	font-weight: thin;
+	color: white;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+}
+.progress-bar{
+	position: relative;
+	width: 100%;
+	height: 5px;
+	background-color: #808080;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.progress-bar::after{
+	position: absolute;
+	content: attr(value);
+	top: -35px;
+	right: 0;
+	color: #808080;
+	font-size: 18px;
+}
+.progress-line{
+	position: absolute;
+	width: 0%;
+	height: 7px;
+	background-color: #d03645;
+	border-radius: 15px;
+	top: -1px;
+	animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
+}
+@keyframes animate{
+	100%{
+		width: 100%;
+	}
+}
+.progress-line::after{
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	background-color: #d03645;
+}
+@media(max-width: 768px){
+	.container{
+		padding: 30px 8%;
+	}
+}
+@media(max-width: 568px){
+	.container .row{
+		flex-direction: column;
+	}
+	.container .main-title h1{
+		font-size: 36px;
+	}
+	.container .row{
+		margin-top: 30px;
+	}
+	.row .col:nth-child(2){
+		margin-top: 20px;
+	}
+}
+/*footer--------------------------------------------------*/
+footer{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+footer p:nth-child(1){
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+footer p:nth-child(2){
+  color: white;
+  font-size: 17px;
+  width: 500px;
+  text-align: center;
+  line-height: 26px;
+}
+.social{
+  display: flex;
+}
+.social a{
+
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d03645;
+  border-radius: 50%;
+  margin: 22px 10px;
+}
