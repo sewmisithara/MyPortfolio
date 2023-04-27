@@ -138,7 +138,7 @@
  margin-top: 125px;
  margin-left: 50px;
  border-radius: 0px 20px 0px 20px;
- border: 5px solid #C69749;
+ border: 5px solid #191919 ;
 
 }
 .about .photo img:hover{
@@ -187,7 +187,7 @@ margin-bottom: 40px;
 
 }
 .about .icon-menu i{
- color: #C69749;
+ color: #e91e63;
  font-size: 25px;
  margin-left: 20px;
  margin-bottom: 15px;
@@ -339,12 +339,14 @@ max-width: 800px;
 text-align: center;
 
 }
+
 .contact .content h2{
   font-size: 36px;
   font-weight: 500;
   color: #fff;
 
 }
+
 
 .contact .content p{
   font-weight: 300;
@@ -389,13 +391,21 @@ display: flex;
 margin-left: 20px;
 font-size: 16px;
 color: #fff;
-flex-direction: column;
+flex-direction:column-reverse;
 font-weight: 300;
+
 }
 
 .conta .containfo .box1 .text1 h3{
 
-  font-weight: 500;
+  font-size: 15px;
+  color: white;
+
+}
+
+.conta .containfo .box1 .text1 p{
+
+  font-size: 25px;
   color: #00bcd4;
 
 }
@@ -481,12 +491,15 @@ background:  white;
 
  
  .sub-title{
+  position: relative;
     color: white;
     font-size: 40px;
     width: 1130px;
     margin: 30px auto;
     text-align:center ;
  }
+
+
 
 
   
