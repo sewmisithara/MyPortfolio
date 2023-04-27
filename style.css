@@ -321,7 +321,7 @@ background-color: transparent;
 border: 2px solid #f9004d;
 cursor: pointer;
 }
-/* contact*/
+/* -----------------------------------------------------------------contact-----------------------------------------------------------------*/
 .contact{
 
   position: relative;
@@ -342,11 +342,16 @@ text-align: center;
 }
 
 .contact .content h2{
-  font-size: 36px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 500px;
   color: #fff;
+  font-family: 'Inter';
+  
+  
+  
 
 }
+
 
 
 .contact .content p{
@@ -478,7 +483,7 @@ background:  white;
 
  }
 
- /* project---------------------------------------------------------------------------------------------*/
+ /* --------------------------------------project---------------------------------------------------------------------------------------------*/
 
  .container{
   background-color:#191919;
@@ -625,7 +630,7 @@ margin-bottom: 20px;
 
 
 
- /* skils*/
+ /*--------------------------------------------------------------- skils------------------------------------------------------------------*/
 
 
  .container3{
@@ -773,12 +778,12 @@ margin-bottom: 20px;
 		margin-top: 20px;
 	}
 }
-/*footer--------------------------------------------------*/
+/*-------------------------------------------------------------------------footer--------------------------------------------------*/
 footer{
   position: relative;
   width: 100%;
   height: 400px;
-  background: #101010;
+  background-image: url(/assest/images/black.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
