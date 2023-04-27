@@ -118,22 +118,95 @@
     
     }
    /* ------------------------------------------------------about me---------------------------------------------*/
-   .about{
+          .section{
+
+            width: 100%;
+            min-height: 100vh;
+            background-color: #ddd;
+          }
+          .container5{
+                width: 80%;
+                display: block;
+                margin: auto;
+                padding-top: 100px;
+
+          }
+          .content-section{
+
+            float: left;
+            width: 55%;
+          }
+          .image-section{
+
+            float: right;
+            width: 40%;
+          }
+          .image-section img{
+            width: 100%;
+            height: auto;
+          }
+
+          .content-section title{
+             text-transform: uppercase;
+             font-size: 28px;
+
+          }
+
+          .content-section .content2 h3{
+            margin-top: 20px;
+            color: #5d5d5d;
+ 
+          }
+          .content-section .content2 p{
+
+            margin-top: 10px;
+            font-family: sans-serif;
+            font-size: 17px;
+            line-height: 1.5;
+          }
+
+          .content-section .content2 .button{
+            margin-top: 30px;
+          }
+          .content-section .content2 .button a {
+             background-color:#5d5d5d ;
+             padding: 12px 40px;
+             text-decoration: none;
+             color: #fff;
+             font-size: 25px;
+             letter-spacing: 1.5px;
+          }
+          .content-section .content2 .button a:hover{
+            background-color: #f9004d;
+            color: #fff;
+          }
+          .content-section .social1{
+            margin-top: 40px ;
+          }
+          .content-section .social1 i{
+             color: #e91e63;
+             font-size: 30px;
+             padding: 0px 10px;
+          }
+          .content-section .social1 i:hover{
+            color: #3d3d3d;
+          }
+          
+
+
+
+
+
+
+   /*.about{
     background-color:#191919;
-    /* height: 100vh;
-    width: 100%; */
-  
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-    /* position: relative; */
+   
     display: flex;
     flex-direction: row;
  }
 
 .about .photo img{
- /* padding-top: 125px;
- padding-left: 50px; */
+
 
  margin-top: 125px;
  margin-left: 50px;
@@ -148,13 +221,7 @@
 margin: 5;
 padding: 5px;
 background:#191919(16, 7, 13, 0.804);
-/* position: relative; */
-/* height: 400px;
-width: 650px; */
-/* width: 600px;
-height: 500px;
-margin-left: 600px;
-border-radius: 20px; */
+
 margin-top: 100px;
 border-radius: 20px;
 margin-right: 80px;
@@ -221,9 +288,9 @@ border-style: none;
 }
 .dovnload-cv i{
 font-size: 14px;
-/* padding-right: 10px; */
+
 padding-top: 0px;
-/* margin-right: 80px; */
+
 position: absolute;
 padding-left: 100px;
 margin-right: 40px;
