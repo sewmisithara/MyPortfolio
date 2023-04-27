@@ -241,7 +241,7 @@ a{
 
 }
 
-/*service*/
+/*----------------------------------------------------------------------------service*/
 
 .Service{
   background-color: #101010;
@@ -255,6 +255,7 @@ a{
   font-size: 40px;
   width: 1130px;
   margin: 30px auto;
+  font-family: 'Inter';
   text-align:center ;
  
 
@@ -497,6 +498,18 @@ background:  white;
     width: 1130px;
     margin: 30px auto;
     text-align:center ;
+    
+
+ }
+
+ .sub-title h2{
+   color: white;
+  font-size: 40px;
+  width: 1130px;
+  margin: 30px auto;
+  font-family: 'Inter';
+  text-align:center ;
+
  }
 
 
@@ -776,6 +789,7 @@ footer p:nth-child(1){
   color: white;
   margin-bottom: 20px;
   font-weight: bold;
+  font-family:instrument serif;
 }
 footer p:nth-child(2){
   color: white;
