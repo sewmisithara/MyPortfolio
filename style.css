@@ -121,8 +121,8 @@
           .section{
 
             width: 100%;
-            min-height: 100vh;
-            background-color: #ddd;
+            min-height: 80vh;
+            background-color:#191919;
           }
           .container5{
                 width: 80%;
@@ -131,7 +131,7 @@
                 padding-top: 100px;
 
           }
-          .content-section{
+         .content-section{
 
             float: left;
             width: 55%;
@@ -148,22 +148,40 @@
 
           .content-section title{
              text-transform: uppercase;
-             font-size: 28px;
+             font-size: 10px;
 
           }
 
-          .content-section .content2 h3{
-            margin-top: 20px;
-            color: #5d5d5d;
+
+
+          
+         
+          
+          .content-section .content2 h5{
+          margin-top: 20px;
+          color:white;
+        
+          font-size: 50px;
+          
+          
+          font-family: 'Inter';
+          
  
           }
+
+          
+ 
+          
           .content-section .content2 p{
 
             margin-top: 10px;
             font-family: sans-serif;
             font-size: 17px;
             line-height: 1.5;
+            color: white;
           }
+      
+
 
           .content-section .content2 .button{
             margin-top: 30px;
