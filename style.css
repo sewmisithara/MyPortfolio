@@ -13,6 +13,8 @@
    background-position: center;
   
   }
+
+  
   nav{
   
     display: flex;
@@ -143,7 +145,8 @@
           }
           .image-section img{
             width: 100%;
-            height: 600px;
+            height: 500px;
+            
           }
 
           .content-section title{
@@ -209,8 +212,58 @@
           .content-section .social1 i:hover{
             color: #3d3d3d;
           }
-          
 
+
+
+          @media screen and (max-width:768px){
+            .container5{
+              width: 80%;
+              display: block;
+              margin: auto;
+              padding-top: 50px;
+            }
+
+          
+          .content-section{
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+          }
+
+          .image-section{
+            float: none;
+            width: 100%;
+             
+          }
+          .image-section img{
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+          }
+          
+          .content-section title{
+            text-align: center;
+            font-size: 19px;
+
+          }
+          
+          .content-section .content2 .button{
+          text-align: center;
+          }
+
+          .content-section .content2 .button a{
+
+            padding: 9px 30px;
+          }
+          .content-section .social1{
+            text-align: center;
+          }
+        }
+            
+
+          
 
 
 
@@ -567,6 +620,11 @@ background:  white;
 
 
  }
+ @media (max-width:991px){
+   
+
+ }
+
 
  /* --------------------------------------project---------------------------------------------------------------------------------------------*/
 
@@ -917,3 +975,36 @@ footer p:nth-child(2){
   bottom: 35px;
   font-size: 14px;
 }
+/*---------------------------------------------------------skil-------------------------
+*/
+.container10{
+
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:40px
+}
+
+.container10 .card{
+position: relative;
+width: 220px;
+height: 250px;
+background: #2a2a2a;
+
+
+}
+.container10 .card .percent{
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.container10 .card .percent svg cricle {
+  width: 100%;
+  height:100%;
+  fill: transparent;
+  stroke-width: 2;
+  stroke: #191919;
+} 
