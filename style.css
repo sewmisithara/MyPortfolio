@@ -621,7 +621,20 @@ background:  white;
 
  }
  @media (max-width:991px){
-   
+  .content{
+    padding: 50px;
+  }
+  .conta{
+    flex-direction: column;
+  }
+  .conta .containfo{
+       margin-bottom: 40px;
+  }
+  .conta .containfo,
+  .contactForm{
+    width: 100%;
+}
+
 
  }
 
