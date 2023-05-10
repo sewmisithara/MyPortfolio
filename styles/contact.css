@@ -1,0 +1,133 @@
+.contact-content {
+  background: #fafafc;
+}
+
+.contact-content .content {
+  text-align: center;
+}
+
+.contact-content .content p {
+  color: #696969;
+}
+
+.conta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  background: url("/assest/images/Hero.jpg");
+  background-size: cover;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+}
+
+.conta .containfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.conta .containfo .box1 {
+  position: relative;
+  margin: 20px 0px;
+  display: flex;
+}
+
+.conta .containfo .box1 .icon {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+.conta .containfo .box1 .text1 {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.conta .containfo .box1 .text1 h3 {
+  font-size: 14px;
+  color: #bebebe;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.conta .containfo .box1 .text1 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.contactForm {
+  width: 36%;
+  padding: 40px;
+  background: white;
+}
+.contactForm h2 {
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+  font-family: "Raleway", sans-serif;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #130f40;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #130f40;
+  border-radius: 6px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}

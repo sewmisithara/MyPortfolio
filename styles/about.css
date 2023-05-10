@@ -1,0 +1,60 @@
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+
+.about-content .image-section {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+.about-content .section-title {
+  text-align: left;
+}
+
+.about-content p {
+  line-height: 30px;
+  font-weight: 500;
+  color: #696969;
+  margin-bottom: 36px;
+}
+
+.about-content .read-more {
+  background-color: #30336b;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.about-content .content {
+  margin-bottom: 40px;
+}
+
+.about-content .social {
+  display: flex;
+}
+
+.about-content .social a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7b828c;
+  border-radius: 20%;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.about-content .social a:hover {
+  transition: all ease-in 0.3s;
+  background: #202156;
+}

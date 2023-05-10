@@ -1,0 +1,27 @@
+footer {
+  width: 100%;
+  height: 160px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+}
+
+footer p {
+  color: #696969;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+footer i {
+  color: #130f41;
+}
+
+footer .social {
+  display: flex;
+  justify-content: space-around;
+  width: 8%;
+  margin-top: 10px;
+}

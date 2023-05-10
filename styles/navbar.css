@@ -1,0 +1,48 @@
+/* NavBar */
+
+.nav-bar {
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 2px 17px 0px rgba(145, 145, 145, 0.301);
+  -webkit-box-shadow: 0px 2px 17px 0px rgba(145, 145, 145, 0.301);
+  -moz-box-shadow: 0px 2px 17px 0px rgba(145, 145, 145, 0.301);
+}
+
+.logo {
+  color: #7b828c;
+  font-size: 32px;
+  cursor: pointer;
+  flex: 1;
+  font-style: italic;
+}
+
+.logo span {
+  color: #202156;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease-in;
+}
+
+.nav-links li a:hover {
+  color: #202156;
+}

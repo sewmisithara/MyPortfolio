@@ -1,0 +1,28 @@
+.skill-content {
+  background: #fafafc;
+}
+
+.skill-content .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 160px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-content .icon-box h3 {
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  margin-left: 5px;
+}
+
+.skill-content .icon-box img {
+  width: 34px;
+  height: 34px;
+}
