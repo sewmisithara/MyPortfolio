@@ -58,3 +58,16 @@
   transition: all ease-in 0.3s;
   background: #202156;
 }
+
+
+@media screen and (max-width:768px){
+  
+  .image-section{
+   display: none;
+  }
+  
+  
+  
+
+
+}

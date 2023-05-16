@@ -46,3 +46,21 @@
 .nav-links li a:hover {
   color: #202156;
 }
+
+
+@media screen and (max-width: 768px) {
+  .logo{
+
+    font-size: 2rem;
+
+
+  }
+
+  .nav-links{
+    
+
+
+}
+
+
+}

@@ -131,3 +131,17 @@
   font-weight: 500;
   font-family: "Raleway", sans-serif;
 }
+
+@media (max-width:991px){
+  .content{
+    padding: 50px;
+  }
+
+  .conta{
+    flex-direction: column; 
+
+
+ }
+
+ }
+
