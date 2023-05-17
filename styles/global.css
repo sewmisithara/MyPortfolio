@@ -26,3 +26,10 @@ html {
   font-weight: 500;
   color: #333333;
 }
+
+@media (max-width: 640px) {
+
+  .container {
+    padding: 26px;
+  }
+}

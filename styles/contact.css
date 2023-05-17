@@ -1,5 +1,5 @@
 .contact-content {
-  background:  #fafafc;
+  background: #fafafc;
 }
 
 .contact-content .content {
@@ -132,16 +132,27 @@
   font-family: "Raleway", sans-serif;
 }
 
-@media (max-width:991px){
-  .content{
-    padding: 50px;
+@media (max-width: 990px) {
+  .contactForm {
+    width: 80%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
 
-  .conta{
-    flex-direction: column; 
+  .conta .containfo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+  }
+}
 
 
- }
+@media (max-width: 560px) {
 
- }
-
+  .contactForm {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 100%;
+  }
+}

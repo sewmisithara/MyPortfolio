@@ -38,6 +38,7 @@
 
 .about-content .social {
   display: flex;
+  
 }
 
 .about-content .social a {
@@ -66,8 +67,12 @@
    display: none;
   }
   
+  .about-content .section-title {
+    text-align: center;
+  }
   
-  
-
+  .about-content .content {
+    padding: 0px;
+  }
 
 }
