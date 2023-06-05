@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+
+    <title>QUA Assignmet2</title>
+
+    <style>
+        h1 {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 50px;
+            color: rgb(187, 0, 100);
+        }
+
+        #home {
+            position: absolute;
+            left: 1000px;
+            bottom: 0px;
+            width: 360px;
+            height: 360px;
+            background-image: url("assest/House1.gif");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section {
+            position: absolute;
+            left: 0;
+            bottom: 40px;
+            margin: auto;
+            width: 1000px;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        section p {
+            width: calc(700px/6);
+            background-image: url("assest/1.gif");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section p {
+            text-align: right;
+            font-size: 30px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Js Que</h1>
+
+    <section>
+
+        <p>A</p>
+
+        <p>B</p>
+
+        <p>C</p>
+
+        <p>D</p>
+
+        <p>E</p>
+
+        <p>F</p>
+
+    </section>
+    <div id="home">
+
+    </div>
+    <script>
+        let Leters = ["A", "B", "C", "D", "E", "F"];
+
+        let divArray = document.querySelector("section").children;
+
+
+        setInterval(function () {
+
+            for (let i = 0; i < divArray.length; i++) {
+                divArray[i].innerText = Leters[i];
+            }
+            let lastElement = Leters.pop();
+            Leters.unshift(lastElement);
+
+        }, 500);
+
+
+
+    </script>
+</body>
+
+</html>
