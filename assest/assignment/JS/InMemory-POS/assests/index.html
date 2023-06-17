@@ -4,17 +4,10 @@
     <meta charset="UTF-8">
     <title>POS SYSTEM</title>
     
+    <link rel="stylesheet" href="../../../CssFramework/assests/fonts-awesome/css/all.min.css">
     
-    
-     <link rel="stylesheet" href="../../InMemory-pos/assests/fonts-awesome/css/all.min.css">
-    
-    
-       <link rel="stylesheet" href="../../InMemory-pos/assests/css/bootstrap.css">
-   
-    
-    
+    <link rel="stylesheet" href="../../../CssFramework/assests/css/bootstrap.css">
     <script src="../../../CssFramework/assests/js/bootstrap.js"></script>
-
 
     <style>
 
@@ -23,8 +16,11 @@
             background-size: cover;
         }
     </style>
+    
     <script src="../assests/js/jquery-3.7.0.min.js"></script>
-    <script src="../assests/js/jquery-3.7.0.min.js"></script>
+
+
+
 </head>
 <body>
 
@@ -58,7 +54,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-black" href="#orders" id="btnOrder" >Order</a>
                 </li>
-               
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#placeOrder" id="btnPlaceOrder" >Place Order</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -67,7 +65,7 @@
         <div
                 class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
             <div class="content text-center">
-                <h1 class="text-white">POS SYSTEM</h1>
+                <h1 class="text-white"></h1>
             </div>
         </div>
     </div>
@@ -77,12 +75,10 @@
     <div class="content text-center">
 
 
-        <!------------------Customer ----------------------->
+        <!------------------Customer Section----------------------->
         <main class="container" id="customers">
-
-            
             <section class="row p-4 m-0 object-fit-contain" id="customer">
-                <h2 class="text-body pt-5 m-lg-2 tex"> Customer Details</h2>
+                <h2 class="text-body pt-5 m-lg-2 tex">Manage Customer Details</h2>
                 <section class="col-12 col-sm-12 col-md-12 col-lg-4 " >
                     <h5 class="text-dark text-center m-lg-3 pt-5" ></h5>
                     <form action="" method="post" id="myForm">
@@ -107,11 +103,11 @@
                         </div>
                     </form>
 
-                    <div class="col-8 ms-5">
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3"style="background-color: #40513B;" id="btnSave">Save</button>
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3 "style="background-color: #40513B;">Update</button>
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3 "style="background-color: #40513B;">Delete</button>
-              
+                    <div class="btn-group col-12">
+                        <button type="button" class="btn btn-success " id="btnSaveCustomer">Save</button>
+                        <button type="button" class="btn btn-warning " id="btnUpdateCustomer">Update</button>
+                        <button type="button" class="btn btn-light " id="btnClearCustomer">Clear</button>
+                        <button type="button" class="btn btn-danger " id="btnDeleteCustomer"></i>Delete</button>
                     </div>
 
                 </section>
@@ -121,53 +117,53 @@
                     <table class="table table-light table-striped">
                         <thead>
                         <tr>
-                            <th style="background-color:  #40513B" scope="col">Id</th>
+                            <th style="background-color: #40513B" scope="col">Id</th>
                             <th style="background-color: #40513B" scope="col">Name</th>
-                            <th style="background-color:  #40513B" scope="col">Address</th>
-                            <th style="background-color:  #40513B" scope="col">Contact</th>
+                            <th style="background-color: #40513B" scope="col">Address</th>
+                            <th style="background-color: #40513B" scope="col">Contact</th>
                             <!--<th style="background-color: #76a9d0" scope="col">Action</th>-->
                         </tr>
                         </thead>
                         <tbody id="tblCustomer">
-                      
                         </tbody>
                     </table>
                 </section>
             </section>
         </main>
 
-        <!------------------Item Section----------------------->
+        <!------------------Store Section----------------------->
         <main class="container" id="item">
-            
             <section class="row p-4 m-0 object-fit-contain" id="Items">
-                <h2 class="text-body pt-5 m-lg-2">Manage Items</h2>
+                <h2 class="text-body pt-5 m-lg-2">Manage Item Details</h2>
                 <section class="col-12 col-sm-12 col-md-12 col-lg-4 " >
                     <h5 class="text-dark text-center m-lg-3 pt-5" ></h5>
                     <form>
                         <div class="form-floating mb-3 mt-2">
-                            <input type="text" class="form-control" id="Iid" placeholder="Id">
-                            <label for="Iid">Item id</label>
+                            <input type="text" class="form-control" id="txtItemId" placeholder="Id">
+                            <label for="txtItemId">Item id</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="ItemDesc" placeholder="Name">
-                            <label for="ItemDesc">Description</label>
+                            <input type="text" class="form-control" id="txtItemName" placeholder="Name">
+                            <label for="txtItemName">Description</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="UPrice" placeholder="Address">
-                            <label for="UPrice">Unit Price</label>
+                            <input type="email" class="form-control" id="txtItemPrice" placeholder="Address">
+                            <label for="txtItemPrice">Unit Price</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="Qty" placeholder="Contact">
-                            <label for="Qty">Quantity</label>
+                            <input type="email" class="form-control" id="txtItemQty" placeholder="Contact">
+                            <label for="txtItemQty">Quantity</label>
                         </div>
                     </form>
 
-                    <div class="col-8 ms-5">
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3"style="background-color: #40513B;">Save</button>
-                        <button type="button"class="btn btn-success me-1 mt-2 mb-3"style="background-color: #40513B;">Update</button>
+                    <div class="btn-group col-12">
+                        <button type="button" class="btn btn-success " id="btnSaveItem">Save</button>
+                        <button type="button" class="btn btn-warning " id="btnUpdateItem">Update</button>
+                        <button type="button" class="btn btn-light " id="btnClearItem">Clear</button>
+                        <button type="button" class="btn btn-danger " id="btnDeleteItem"></i>Delete</button>
                     </div>
 
                 </section>
@@ -178,48 +174,15 @@
                         <thead>
                         <tr>
                             <th style="background-color: #40513B" scope="col">Item Id</th>
-                            <th style="background-color:  #40513B" scope="col">Description</th>
-                            <th style="background-color:  #40513B" scope="col">Unit Price</th>
+                            <th style="background-color: #40513B" scope="col">Description</th>
+                            <th style="background-color: #40513B" scope="col">Unit Price</th>
                             <th style="background-color: #40513B" scope="col">Quantity</th>
+
                         </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>rice</td>
-                                <td>800</td>
-                                <td>80</td>
-                               
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>milk powder</td>
-                                <td>1000</td>
-                                <td>6000</td>
-                               
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>cnjsfn</td>
-                                <td>300</td>
-                                <td>166</td>
-                              
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>mkmlk</td>
-                                <td>800</td>
-                                <td>588</td>
-                               
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>jkhjbgv</td>
-                                <td>80.00</td>
-                                <td>944</td>
-                               
-                            </tr> 
-                            </tbody>
+                        <tbody id="tblItem">
+
+                        </tbody>
                     </table>
                 </section>
             </section>
@@ -230,87 +193,101 @@
             <h2 class="text-body pt-5 m-lg-2 pb-3">Manage Orders</h2>
             <table class="table table-light table-striped">
                 <thead>
-                    <tr>
-                        <th style="background-color:  #40513B" scope="col">Order ID</th>
-                        <th style="background-color:  #40513B" scope="col">Date</th>
-                        <th style="background-color:  #40513B" scope="col">Customer ID</th>
-                        <th style="background-color:  #40513B" scope="col">Item ID</th>
-                        <th style="background-color:  #40513B" scope="col">Quantity</th>
-                        <th style="background-color:  #40513B" scope="col">Discount</th>
-                        <th style="background-color:  #40513B" scope="col">Total</th>
-                        
-                    </tr>
+                <tr>
+                    <th style="background-color: #76a9d0" scope="col">Order ID</th>
+                    <th style="background-color: #76a9d0" scope="col">Date</th>
+                    <th style="background-color: #76a9d0" scope="col">Customer ID</th>
+                    <th style="background-color: #76a9d0" scope="col">Item ID</th>
+                    <th style="background-color: #76a9d0" scope="col">Quantity</th>
+                    <th style="background-color: #76a9d0" scope="col">Discount</th>
+                    <th style="background-color: #76a9d0" scope="col">Total</th>
+                    <th style="background-color: #76a9d0" scope="col">Action</th>
+                </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                    </tr>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                       
-                    </tr>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                    </tr>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                       
-                    </tr>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                       
-                    </tr>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                       
-                    </tr>
-                    </tbody>
+                <tr>
+                    <th scope="col">O001</th>
+                    <th scope="col">2023-05-25</th>
+                    <th scope="col">C001</th>
+                    <th scope="col">I001</th>
+                    <th scope="col">4</th>
+                    <th scope="col">400.00</th>
+                    <th scope="col">5000.00</th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">O002</th>
+                    <th scope="col">2023-05-25</th>
+                    <th scope="col">C001</th>
+                    <th scope="col">I001</th>
+                    <th scope="col">5</th>
+                    <th scope="col">300.00</th>
+                    <th scope="col">1800.00</th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">O003</th>
+                    <th scope="col">2023-05-25</th>
+                    <th scope="col">C001</th>
+                    <th scope="col">I001</th>
+                    <th scope="col">2</th>
+                    <th scope="col">100.00</th>
+                    <th scope="col">2000.00</th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">O004</th>
+                    <th scope="col">2023-05-25</th>
+                    <th scope="col">C001</th>
+                    <th scope="col">I001</th>
+                    <th scope="col">2</th>
+                    <th scope="col">100.00</th>
+                    <th scope="col">1900.00</th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">O005</th>
+                    <th scope="col">2023-05-25</th>
+                    <th scope="col">C001</th>
+                    <th scope="col">I001</th>
+                    <th scope="col">2</th>
+                    <th scope="col">100.00</th>
+                    <th scope="col">1900.00</th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">O006</th>
+                    <th scope="col">2023-05-25</th>
+                    <th scope="col">C001</th>
+                    <th scope="col">I001</th>
+                    <th scope="col">2</th>
+                    <th scope="col">100.00</th>
+                    <th scope="col">1900.00</th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    </th>
+                </tr>
+                </tbody>
             </table>
         </main>
 
-        
+        <!------------------Place Order Section----------------------->
         <main class="container-fluid" id="placeOrder">
             <h2 style="color: black" class="mt-2 mb-0 text-center">Place Order</h2>
 
@@ -333,18 +310,18 @@
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">CustomerID</span>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" id="cusIdList" aria-label="Default select example">
                                     <option selected>Select ID</option>
-                                    <option value="1">C001</option>
+                                    <!--<option value="1">C001</option>
                                     <option value="2">C002</option>
-                                    <option value="3">C003</option>
+                                    <option value="3">C003</option>-->
                                 </select>
                             </div>
                         </div>
                         <div class="col">
                             <div class="input-group">
-                                <span class="input-group-text">Customer Name</span>
-                                <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                                <span class="input-group-text" >Customer Name</span>
+                                <input class="form-control" id="cusNamePO" type="text" placeholder="" aria-label="Disabled input example" disabled>
                             </div>
                         </div>
 
@@ -354,11 +331,11 @@
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Item ID</span>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" id="itemIdList" aria-label="Default select example">
                                     <option selected>Select ID</option>
-                                    <option value="1">I001</option>
+                                    <!--<option value="1">I001</option>
                                     <option value="2">I002</option>
-                                    <option value="3">I003</option>
+                                    <option value="3">I003</option>-->
                                 </select>
                             </div>
                         </div>
@@ -366,28 +343,28 @@
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Description</span>
-                                <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                                <input class="form-control" id="cusDesPO" type="text" placeholder="" aria-label="Disabled input example" disabled>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Qty On Hand</span>
-                                <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                                <input class="form-control" id="cusQtyOnHandPO" type="text" placeholder="" aria-label="Disabled input example" disabled>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Unit Price</span>
-                                <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                                <input class="form-control" id="cusPricePO" type="text" placeholder="" aria-label="Disabled input example" disabled>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Quantity</span>
-                                <input class="form-control" type="text" placeholder="" aria-label="Disabled input example">
+                                <input class="form-control" id="cusQtyPO" type="text" placeholder="" aria-label="Disabled input example">
                             </div>
                         </div>
 
@@ -409,18 +386,38 @@
                     <table class="table table-light table-striped">
                         <thead>
                         <tr>
-                            <th style="background-color: #40513B" scope="col">Item ID</th>
-                            <th style="background-color: #40513B" scope="col">Description</th>
-                            <th style="background-color: #40513B" scope="col">Qty</th>
-                            <th style="background-color: #40513B" scope="col">Unit Price</th>
-                            <th style="background-color: #40513B" scope="col">Total</th>
-                            
+                            <th style="background-color: #76a9d0" scope="col">Item ID</th>
+                            <th style="background-color: #76a9d0" scope="col">Description</th>
+                            <th style="background-color: #76a9d0" scope="col">Qty</th>
+                            <th style="background-color: #76a9d0" scope="col">Unit Price</th>
+                            <th style="background-color: #76a9d0" scope="col">Total</th>
+                            <th style="background-color: #76a9d0" scope="col">Action</th>
                         </tr>
                         </thead>
                         <tbody>
 
-                        
-                        
+                        <tr>
+                            <th scope="col">I001</th>
+                            <th scope="col">Milk</th>
+                            <th scope="col">2</th>
+                            <th scope="col">2000.00</th>
+                            <th scope="col">4000.00</th>
+                            <th scope="col">
+                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col">I002</th>
+                            <th scope="col">Rice</th>
+                            <th scope="col">10</th>
+                            <th scope="col">2200.00</th>
+                            <th scope="col">2200.00</th>
+                            <th scope="col">
+                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            </th>
+                        </tr>
 
 
 
@@ -466,8 +463,8 @@
     <script src="assests/js/jquery-3.7.0.min.js"></script>
 
 <script>
-    let customerList = [];
-    document.getElementById("home").style.display="none";
+
+    document.getElementById("home").style.display="block";
     document.getElementById("customers").style.display="none";
     document.getElementById("item").style.display="none";
     document.getElementById("orders").style.display="none";
@@ -476,14 +473,13 @@
     document.getElementById("btnCustomer").addEventListener("click", function () {
          document.getElementById("home").style.display="none";
         document.getElementById("customers").style.display="block";
-        /*document.getElementById("item").style.display="none";*/
+        document.getElementById("item").style.display="none";
         document.getElementById("orders").style.display="none";
         document.getElementById("placeOrder").style.display="none";
 
     });
     document.getElementById("btnItem").addEventListener("click", function(){
-
-        // document.getElementById("home").style.display="none";
+        document.getElementById("home").style.display="none";
         document.getElementById("customers").style.display="none";
         document.getElementById("orders").style.display="none";
         document.getElementById("placeOrder").style.display="none";
@@ -504,26 +500,20 @@
         document.getElementById("placeOrder").style.display="block";
     });
 
-$("#btnSave").click(function(){
-    let cusId = $("#txtcid").val();
-    let cusName = $("#txtName").val();
-    let cusAddress = $("#txtAddress").val();
-    let cusContact = $("#txtcontact").val();
+    document.getElementById("btnHome").addEventListener("click", function(){
+        document.getElementById("home").style.display="block";
+        document.getElementById("customers").style.display="none";
+        document.getElementById("orders").style.display="none";
+        document.getElementById("placeOrder").style.display="none";
+        document.getElementById("item").style.display="none";
+    });
 
-
-    let tBody = $("#tblCustomer");
-
-    let tr = $('<tr><td>'+cusId+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
-
-    //set the row to the table body
-    tBody.append(tr);
-
-    customerList.push({id:cusId, name:cusName, address:cusAddress, contact:cusContact})
-    console.log(customerList)
-});
 
 
 
 </script>
+    <script src="/assest/assignment/JS/InMemory-pos/assests/script/customerScript.js"></script>
+    <script src="/assest/assignment/JS/InMemory-pos/assests/script/itemScript.js"></script>
+    <script src="/assest/assignment/JS/InMemory-pos/assests/script/placeOrderScript.js"></script>
 </body>
 </html>
