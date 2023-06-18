@@ -1,0 +1,187 @@
+body{
+    overflow-x: hidden;
+    background-image: url("../img/va.jpg");
+    background-size:cover;
+}
+
+
+#h1ID{
+    color: white;
+    font-size: 40px;
+}
+.form-label{
+    color: white;
+}
+.Grid-Section {
+    position: relative;
+    width: 813px;
+    left: 40px;
+    top: 50px;
+    height: 854px;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(5,1fr);
+    display: grid;
+    grid-gap: 35px;
+}
+
+.Grid-Section>div {
+    position: relative;
+    width: 163px;
+    height: 177px;
+    border-radius: 20px;
+}
+
+.Grid-Section>div:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.Grid-Section>div{
+    background-size: cover;
+}
+
+
+.Grid-Section>div>article {
+    background-color: black;
+    opacity: 0.7;
+    width: 164px;
+    height: 44px;
+    position: relative;
+    top: 133px;
+    border-radius: 20px;
+}
+
+.Grid-Section>div>article>p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    opacity:1;
+}
+
+#btn1{
+    border-radius: 30px;
+}
+#btn2{
+    border-radius: 30px;
+}
+#btn3{
+    border-radius: 30px;
+}
+#btn4{
+    border-radius: 30px;
+}
+
+
+
+
+
+
+/*////////////////////////////////////cart section////////////////////////////////////////////////////////////////////*/
+
+.Cart-section {
+    position: absolute;
+    right: 30px;
+    width: 280px;
+    top: 129px;
+    height: 800px;
+    background-image: linear-gradient(45deg, #906060, #ff4545);
+}
+
+#cart-details {
+    position: relative;
+    font-size: 23px;
+    top: 14px;
+    left: 103px;
+}
+
+#Cart {
+    background-image: url(../icon/cart.png);
+    position: absolute;
+    width: 56px;
+    height: 60px;
+    background-size: cover;
+    left: 36px;
+}
+
+#Total {
+    font-size: 23px;
+    left: 30px;
+    position: relative;
+    top: 80px;
+}
+
+#Total-Box {
+    position: relative;
+    background-color: white;
+    width: 132px;
+    left: 124px;
+    top: 22px;
+    height: 50px;
+}
+
+#Price{
+    font-size: 21px;
+    position: relative;
+    left: 24px;
+    top: 8px;
+}
+
+#checkout-button {
+    width: 184px;
+    height: 50px;
+    position: relative;
+    top: 126px;
+    left: 50px;
+    color: #101214;
+}
+
+#select-button {
+    top: 85px;
+    position: relative;
+    width: 281px;
+    height: 60px;
+    color: #101214;
+}
+
+#cancle-button {
+    width: 89px;
+    right: 90px;
+    height: 50px;
+    position: relative;
+    top: 210px;
+    color: #101214;
+}
+
+#print-button {
+    width: 65px;
+    right: -22px;
+    height: 38px;
+    position: relative;
+    top: 300px;
+    color: #101214;
+}
+
+
+/*//////////////////////////////////////////////////nav-section//////////////////////////////////////////////////////*/
+
+#Item-button{
+    position: relative;
+    top: 3px;
+    left: 53px;
+}
+#customer-button{
+    position: relative;
+    top: 3px;
+    left: 83px;
+}
+#report-button{
+    position: relative;
+    top: 3px;
+    left: 114px;
+}
+#setting-button{
+    left: 124px;
+    position: relative;
+    top: 3px;
+}
