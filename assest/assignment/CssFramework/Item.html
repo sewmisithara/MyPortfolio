@@ -8,53 +8,49 @@
     <link rel="stylesheet" href="assests/css/bootstrap.css">
     <link rel="stylesheet" href="assests/fonts-awesome/css/all.min.css">
     <script src="assests/js/bootstrap.js"></script>
-    <script src="../../JS/InMemory-POS/assests/js/bootstrap.js"></script>
 
 </head>
 
 <style>
     .banner-image {
-        background-image: url('../../assignment/CssFramework/assests/img/whi.jpg');
+        background-image: url('assests/img/va.jpg');
         background-size: cover;
     }
 
+
 </style>
 <body>
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-    <div class="container">
-        <a class="navbar-brand" href="#"><i class="fa-brands fa-xing"></i> POS SYSTEM</a>
-        <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="mx-auto"></div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="customer.html">Customer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="./Item.html">Item</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="order.html">Order</a>
-                </li>
-               
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  " style="height: 70px">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Organic SuperMarket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li>
+                        <a class="nav-link text-white" href="home.html">Home</a>
+                      </li>
+                      <li>
+                    <li>
+                      <a class="nav-link text-white" href="Item.html">Item</a>
+                    </li>
+                    <li>
+                      <a class="nav-link text-white" href="customer.html">Customer</a>  
+                    </li>
+                    <li>
+                      <a class="nav-link text-white" href="order.html">Order</a>
+                    </li>
+                  
+      
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-    </div>
-</nav>
+      </nav>
 
 
 <div
@@ -63,93 +59,58 @@
        
     </div>
 
-    <main class="container">
-        <section class="row p-4 m-0 object-fit-contain" id="Items">
-            <h2 class="text-body pt-5 m-lg-2"></h2>
-            <section class="col-12 col-sm-12 col-md-12 col-lg-4 " >
-                <h5 class="text-dark text-center m-lg-3 pt-5" ></h5>
-                <form>
-                    <div class="form-floating mb-3 mt-2">
-                        <input type="text" class="form-control" id="Iid" placeholder="Id">
-                        <label for="Iid">Item id</label>
+  
+    <main id="Customer-Content">
+        <section class="row">
+            <div class="col-4  " >
+                <form class="mx-5 mt-5">
+                    <div class="mb-3">
+                        <label for="txtCID" class="form-label">Item Code</label>
+                        <input type="text" class="form-control" id="txtCID" >
+                        <span class="control-error text-danger" id="lblCusID"></span>
                     </div>
-
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="ItemDesc" placeholder="Name">
-                        <label for="ItemDesc">Description</label>
+                    <div class="mb-3">
+                        <label for="txtCustomerName" class="form-label">Item Description</label>
+                        <input type="text" class="form-control" id="txtCustomerName">
+                        <span class="control-error text-danger" id="lblCusName"></span>
                     </div>
-
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="UPrice" placeholder="Address">
-                        <label for="UPrice">Unit Price</label>
+                    <div class="mb-3">
+                        <label  for="txtAddress" class="form-label">Item Qty on Hand</label>
+                        <input type="text" class="form-control" id="txtAddress" >
+                        <span class="control-error text-danger" id="lblAddress"></span>
                     </div>
-
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="Qty" placeholder="Contact">
-                        <label for="Qty">Quantity</label>
+                    <div class="mb-3">
+                        <label  for="txtAge" class="form-label">Item unit price</label>
+                        <input type="text" class="form-control" id="txtAge" >
+                        <span class="control-error text-danger" id="lblAge"></span>
                     </div>
+                   
+                    <button  type="button" class="btn btn-primary mt-2" id="btnSave">Save </button>
+                    <button  type="button" class="btn btn-warning mt-2 mx-2" id="btnUpdate">Update </button>
+                    <button  type="button" class="btn btn-danger mt-2 " id="btnDelete">Delete </button>
+                    
+    
                 </form>
-
-                <div class="col-8 ms-5">
-                    <button type="button" class="btn btn-success me-1 mt-2 mb-3"style="background-color: #40513B;">Save</button>
-                    <button type="button"class="btn btn-success me-1 mt-2 mb-3"style="background-color: #40513B;">Update</button>
-                </div>
-
-            </section>
-
-            <section class="col-12 col-sm-12 col-md-12 col-lg-7 ">
-                <h5 class="text-dark text-center m-lg-3 pb-3" >Manage Items</h5>
-                <table class="table table-light table-striped">
-                    <thead>
+            </div >
+            <div class="col-7">
+                <table class="table table-bordered table-hover mt-5 mx-5">
+                    <thead class="bg-warning text-black-50">
                     <tr>
-                        <th style="background-color: #40513B" scope="col">Item Id</th>
-                        <th style="background-color:  #40513B" scope="col">Description</th>
-                        <th style="background-color:  #40513B" scope="col">Unit Price</th>
-                        <th style="background-color: #40513B" scope="col">Quantity</th>
-                     
+                        <th>Item   Code</th>
+                        <th>Item  Description</th>
+                        <th>Item   Qty</th>
+                        <th>Item   Price</th>
+                        
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>rice</td>
-                        <td>800</td>
-                        <td>80</td>
-                       
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>milk powder</td>
-                        <td>1000</td>
-                        <td>6000</td>
-                       
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>cnjsfn</td>
-                        <td>300</td>
-                        <td>166</td>
-                      
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>mkmlk</td>
-                        <td>800</td>
-                        <td>588</td>
-                       
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>jkhjbgv</td>
-                        <td>80.00</td>
-                        <td>944</td>
-                       
-                    </tr> 
+                    <tbody class="bg-light " id="tblCustomer">
+    
                     </tbody>
                 </table>
-            </section>
+            </div>
         </section>
     </main>
+
 </div>
 </body>
 </html>
