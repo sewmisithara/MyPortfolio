@@ -32,37 +32,45 @@
 </head>
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-    <div class="container">
-        <a class="navbar-brand" href="#"></a>
-        <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="mx-auto"></div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#" id="btnHome" >Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#customers" id="btnCustomer" >Customer</a>
-                </li>
-               
-               
-            </ul>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  " style="height: 70px">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home">Organic SuperMarket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  
+   <li class="nav-item">
+    <a class="nav-link text-white" href="#home" id="btnHome" >Home</a>
+</li>
+ <li class="nav-item">
+    <a class="nav-link text-white" href="#customers" id="btnCustomer" >Customer</a>
+</li>
+ <li class="nav-item">
+    <a class="nav-link text-white" href="#item" id="btnItem" >Item</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-white" href="#orders" id="btnOrder" >Order</a>
+</li>
+<li class="nav-item">
+    
+</li>
+                  
+      
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-    </div>
-</nav>
-    <div id="home">
+      </nav>
+
+<div id="home">
         <div
                 class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
             <div class="content text-center">
@@ -78,235 +86,310 @@
 
         <!------------------Customer ----------------------->
         <main class="container" id="customers">
-
-            
-            <section class="row p-4 m-0 object-fit-contain" id="customer">
-                <h2 class="text-body pt-5 m-lg-2 tex"> Customer Details</h2>
-                <section class="col-12 col-sm-12 col-md-12 col-lg-4 " >
-                    <h5 class="text-dark text-center m-lg-3 pt-5" ></h5>
-                    <form action="" method="post" id="myForm">
-                        <div class="form-floating mb-3 mt-2">
-                            <input type="text" class="form-control" id="txtcid" placeholder="Id">
-                            <label for="txtcid">Id</label>
+            <section class="row">
+                <div class="col-4  " >
+                    <form class="mx-5 mt-5">
+                        <div class="mb-3">
+                            <label for="txtCID" class="form-label">Customer ID</label>
+                            <input type="text" class="form-control" id="txtCID" >
+                            <span class="control-error text-danger" id="lblCusID"></span>
                         </div>
-
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="txtName" placeholder="Name">
-                            <label for="txtName">Name</label>
+                        <div class="mb-3">
+                            <label for="txtCustomerName" class="form-label">Customer Name</label>
+                            <input type="text" class="form-control" id="txtCustomerName">
+                            <span class="control-error text-danger" id="lblCusName"></span>
                         </div>
-
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="txtAddress" placeholder="Address">
-                            <label for="txtAddress">Address</label>
+                        <div class="mb-3">
+                            <label  for="txtAddress" class="form-label">Customer Address</label>
+                            <input type="text" class="form-control" id="txtAddress" >
+                            <span class="control-error text-danger" id="lblAddress"></span>
                         </div>
-
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="txtcontact" placeholder="Contact">
-                            <label for="txtcontact">Contact</label>
+                        <div class="mb-3">
+                            <label  for="txtAge" class="form-label">Customer Age</label>
+                            <input type="text" class="form-control" id="txtAge" >
+                            <span class="control-error text-danger" id="lblAge"></span>
                         </div>
+                        <div class="mb-3">
+                            <label  for="txtSalary" class="form-label">Customer Salary</label>
+                            <input type="text" class="form-control" id="txtSalary" >
+                            <span class="control-error text-danger" id="lblSalary"></span>
+                        </div>
+        
+                        <button  type="button" class="btn btn-primary mt-2" id="btnSave">Save </button>
+                        <button  type="button" class="btn btn-warning mt-2 mx-2" id="btnUpdate">Update </button>
+                        <button  type="button" class="btn btn-danger mt-2 " id="btnDelete">Delete </button>
+                        
+        
                     </form>
-
-                    <div class="col-8 ms-5">
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3"style="background-color: #40513B;" id="btnSave">Save</button>
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3 "style="background-color: #40513B;">Update</button>
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3 "style="background-color: #40513B;">Delete</button>
-              
-                    </div>
-
-                </section>
-
-                <section  class="col-12 col-sm-12 col-md-12 col-lg-7 " >
-                    <h5 class="text-dark text-center m-lg-3 pb-3" ></h5>
-                    <table class="table table-light table-striped">
-                        <thead>
+                </div >
+                <div class="col-7">
+                    <table class="table table-bordered table-hover mt-5 mx-5">
+                        <thead class="bg-warning text-black-50">
                         <tr>
-                            <th style="background-color:  #40513B" scope="col">Id</th>
-                            <th style="background-color: #40513B" scope="col">Name</th>
-                            <th style="background-color:  #40513B" scope="col">Address</th>
-                            <th style="background-color:  #40513B" scope="col">Contact</th>
-                            <!--<th style="background-color: #76a9d0" scope="col">Action</th>-->
+                            <th>Customer ID</th>
+                            <th>Customer Name</th>
+                            <th>Customer Address</th>
+                            <th>Customer Age</th>
+                            <th>Customer Salary</th>
                         </tr>
                         </thead>
-                        <tbody id="tblCustomer">
-                      
+                        <tbody class="bg-light " id="tblCustomer">
+        
                         </tbody>
                     </table>
-                </section>
+                </div>
             </section>
+            
+      
         </main>
 
         <!------------------Item Section----------------------->
         <main class="container" id="item">
-            
-            <section class="row p-4 m-0 object-fit-contain" id="Items">
-                <h2 class="text-body pt-5 m-lg-2">Manage Items</h2>
-                <section class="col-12 col-sm-12 col-md-12 col-lg-4 " >
-                    <h5 class="text-dark text-center m-lg-3 pt-5" ></h5>
-                    <form>
-                        <div class="form-floating mb-3 mt-2">
-                            <input type="text" class="form-control" id="Iid" placeholder="Id">
-                            <label for="Iid">Item id</label>
+            <section class="row">
+                <div class="col-4  " >
+                    <form class="mx-5 mt-5">
+                        <div class="mb-3">
+                            <label for="txtCID" class="form-label">Item Code</label>
+                            <input type="text" class="form-control" id="txtCID" >
+                            <span class="control-error text-danger" id="lblCusID"></span>
                         </div>
-
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="ItemDesc" placeholder="Name">
-                            <label for="ItemDesc">Description</label>
+                        <div class="mb-3">
+                            <label for="txtCustomerName" class="form-label">Item Description</label>
+                            <input type="text" class="form-control" id="txtCustomerName">
+                            <span class="control-error text-danger" id="lblCusName"></span>
                         </div>
-
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="UPrice" placeholder="Address">
-                            <label for="UPrice">Unit Price</label>
+                        <div class="mb-3">
+                            <label  for="txtAddress" class="form-label">Item Qty on Hand</label>
+                            <input type="text" class="form-control" id="txtAddress" >
+                            <span class="control-error text-danger" id="lblAddress"></span>
                         </div>
-
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="Qty" placeholder="Contact">
-                            <label for="Qty">Quantity</label>
+                        <div class="mb-3">
+                            <label  for="txtAge" class="form-label">Item unit price</label>
+                            <input type="text" class="form-control" id="txtAge" >
+                            <span class="control-error text-danger" id="lblAge"></span>
                         </div>
+                       
+                        <button  type="button" class="btn btn-primary mt-2" id="btnSave">Save </button>
+                        <button  type="button" class="btn btn-warning mt-2 mx-2" id="btnUpdate">Update </button>
+                        <button  type="button" class="btn btn-danger mt-2 " id="btnDelete">Delete </button>
+                        
+        
                     </form>
-
-                    <div class="col-8 ms-5">
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3"style="background-color: #40513B;">Save</button>
-                        <button type="button"class="btn btn-success me-1 mt-2 mb-3"style="background-color: #40513B;">Update</button>
-                    </div>
-
-                </section>
-
-                <section class="col-12 col-sm-12 col-md-12 col-lg-7 ">
-                    <h5 class="text-dark text-center m-lg-3 pb-3" ></h5>
-                    <table class="table table-light table-striped">
-                        <thead>
+                </div >
+                <div class="col-7">
+                    <table class="table table-bordered table-hover mt-5 mx-5">
+                        <thead class="bg-warning text-black-50">
                         <tr>
-                            <th style="background-color: #40513B" scope="col">Item Id</th>
-                            <th style="background-color:  #40513B" scope="col">Description</th>
-                            <th style="background-color:  #40513B" scope="col">Unit Price</th>
-                            <th style="background-color: #40513B" scope="col">Quantity</th>
+                            <th>Item   Code</th>
+                            <th>Item  Description</th>
+                            <th>Item   Qty</th>
+                            <th>Item   Price</th>
+                            
                         </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>rice</td>
-                                <td>800</td>
-                                <td>80</td>
-                               
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>milk powder</td>
-                                <td>1000</td>
-                                <td>6000</td>
-                               
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>cnjsfn</td>
-                                <td>300</td>
-                                <td>166</td>
-                              
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>mkmlk</td>
-                                <td>800</td>
-                                <td>588</td>
-                               
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>jkhjbgv</td>
-                                <td>80.00</td>
-                                <td>944</td>
-                               
-                            </tr> 
-                            </tbody>
+                        <tbody class="bg-light " id="tblCustomer">
+        
+                        </tbody>
                     </table>
-                </section>
+                </div>
             </section>
+            
         </main>
 
         <!------------------Order Section----------------------->
         <main class="container" id="orders">
-            <h2 class="text-body pt-5 m-lg-2 pb-3">Manage Orders</h2>
-            <table class="table table-light table-striped">
-                <thead>
+            
+                <div class="row">
+                    <!--Item Select Details-->
+                    <div class="col-lg-3 mt-5 mx-5">
+                        <div class="card-header bg-warning font-weight-bolder">Item Select</div>
+                        <div class="card-body">
+                            <form>
+                                <div class="text-black">
+                                    <div class="">
+                                        <div class="form-group ">
+                                            <label>Item Code :</label>
+                                            <select class="form-control" id="selectItemCode"></select>
+                                            <span class="control-error"
+                                                  id="item-empty-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="form-group mt-2">
+                                            <label>Item Name :</label>
+                                            <input class="form-control" id="txtItemDescription" type="text">
+                                        </div>
+                                    </div>
+            
+                                    <div class="">
+                                        <div class="form-group mt-2">
+                                            <label class="">Item Unit Price :</label>
+                                            <input class="form-control" id="txtItemPrice" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="form-group mt-2">
+                                            <label class="">Qty On Hand :</label>
+                                            <input class="form-control" id="txtQTYOnHand" type="text">
+                                        </div>
+                                    </div>
+            
+                                    <div class="">
+                                        <div class="form-group mt-2 ">
+                                            <label>Order Quantity :</label>
+                                            <input class="form-control" id="OrderQty" min="1" type="number">
+                                            <span class="control-error" id="error"style="color: red; display: none;">Input available Qty</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group text-right">
+                                    <button class="btn btn-success mt-4" id="btnAddToTable" type="button">
+                                        Add Item
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+            
+                </div>
+                    <!--Select Customer Details-->
+                    <div class="col-lg-3 text-black">
+                        <div class="card-header bg-secondary font-weight-bolder mt-5 ">Customer Select</div>
+                        <div class="card-body">
+                        <div class="row">
+                            <div class="col-6 mt-2">
+                                <div class="form-group">
+                                    <label>Customer ID :</label>
+                                    <select class="form-control" id="selectCusID"></select>
+                                    <span class="control-error"
+                                          id="cus-empty-error"></span>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-2">
+                                <div class="form-group">
+                                    <label>Customer Name :</label>
+                                    <input class="form-control" id="orderCustomerName" type="text">
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mt-2">
+                                <div class="form-group">
+                                    <label>Cus Address :</label>
+                                    <input class="form-control" id="orderCustomerAddress" type="text">
+                                </div>
+                            </div>
+                            <div class="col-6 mt-2">
+                                <div class="form-group">
+                                    <label>Customer Age :</label>
+                                    <input class="form-control" id="orderCustomerAge" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="form-group">
+                                    <label>Customer Salary :</label>
+                                    <input class="form-control" id="orderCustomerSalary" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!--Invoice Details-->
+                    <div class="col-lg-4 mt-5 mx-5">
+                        <div class="card">
+                            <div class="card-header bg-dark text-white font-weight-bolder">Invoice Details</div>
+                            <div class="card-body">
+                                <form>
+            
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label>Order ID :</label>
+                                                <input class="form-control" id="txtOrderID" type="text">
+                                                <span class="control-error"
+                                                      id="orderId-invalid-error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mx-4">
+                                            <div class="form-group">
+                                                <label >Date :</label>
+                                                <label id="txtDate" ></label>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="row">
+                                        <div class="col-6 mt-2">
+                                            <div class="form-group">
+                                                <label>Cash</label>
+                                                <input class="form-control" id="txtCash" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mt-2">
+                                            <div class="form-group">
+                                                <label>Discount</label>
+                                                <input class="form-control" id="txtDiscount" min="0" type="number">
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="row">
+                                        <div class="col-6 mt-2">
+                                            <div class="form-group ">
+                                                <label id="lblBalance">Balance :</label>
+                                                <label id="txtBalance">0.00</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                        <div class="col-6 mt-4">
+                                           <span id="lblTotal">Total</span>
+                                        </div>
+                                        <div class="col-5 mt-4">
+                                            <span id="lblSubTotal">Sub Total</span>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                        <div class="col-6 mt-2">
+                                            <span id="txtTotal"></span> Rs/=
+                                        </div>
+                                        <div class="col-5 mt-2">
+                                            <span id="txtSubTotal"></span> Rs/=
+                                        </div>
+                                        </div>
+                                        <div class="col-4 mt-4">
+                                            <button class="btn btn-danger" id="btnPurchase" type="button">Purchase</button>
+                                        </div>
+                                        <div class="col-4 mt-4 align-content-end">
+                                            <button class="btn btn-warning" id="btnPrint" type="button">Print</button>
+                                        </div>
+                                    </div>
+            
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!--Order Table-->
+               <div class="col-md-12 mt-4" style="height:180px; overflow-y: scroll">
+                <table class="table table-bordered text-white " id="tblOrder">
+                    <thead class="bg-secondary">
                     <tr>
-                        <th style="background-color:  #40513B" scope="col">Order ID</th>
-                        <th style="background-color:  #40513B" scope="col">Date</th>
-                        <th style="background-color:  #40513B" scope="col">Customer ID</th>
-                        <th style="background-color:  #40513B" scope="col">Item ID</th>
-                        <th style="background-color:  #40513B" scope="col">Quantity</th>
-                        <th style="background-color:  #40513B" scope="col">Discount</th>
-                        <th style="background-color:  #40513B" scope="col">Total</th>
-                        
+                        <th>Order ID</th>
+                        <th>Item Code</th>
+                        <th>Customer ID</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                    </tr>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                       
-                    </tr>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                    </tr>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                       
-                    </tr>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                       
-                    </tr>
-                    <tr>
-                        <th scope="col">r1</th>
-                        <th scope="col">2023-11-11</th>
-                        <th scope="col">C1</th>
-                        <th scope="col">1</th>
-                        <th scope="col">90</th>
-                        <th scope="col">900</th>
-                        <th scope="col">9000</th>
-                       
-                       
-                    </tr>
+                    </thead>
+                    <tbody class="text-black-50 bg-white" id="ViewOrder">
+            
                     </tbody>
-            </table>
+                </table>
+                </div>
+            
+            
+        
         </main>
 
         
