@@ -199,7 +199,10 @@ $('#txtCID,#txtCustomerName,#txtAddress,#txtAge,#txtSalary').on('keydown',functi
 });
 
 
-/*Customer Form Validate*/
+
+
+
+/*--------------------------------------------------------Customer Form Validate-----------------------------------------------------------*/
 $("#txtCID").on('keyup',function (event){
     let cusRegEx=/^(C00)[1-9]{1,3}$/;
     if (event.key=="Enter"){
