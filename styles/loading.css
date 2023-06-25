@@ -1,0 +1,22 @@
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #d3d3d3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.disppear{
+    animation: vanish 1s forwards;
+}
+@keyframes vanish {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
