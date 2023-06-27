@@ -20,6 +20,6 @@ GitHub Pages : https://sewmisithara.github.io/MyPortfolio/ <br> <br>
  * 🔗 <a href="https://www.figma.com/file/KENCWytkk75Z45T7pFneuK/Pos-System?type=design&node-id=0%3A1&t=1l1cQW7aQw7L4n1d-1" target="_blank">POS System MockUp</a> <br> <br>
 
  Desktop View
-![alt text](https://github.com/sewmisithara?tab=repositories/[sewmisithara]/[MyPortfolio]/blob/[README.md]/ss.jpg?raw=true)
+![](assets/readmeImage/ss.jpg)
 
 
