@@ -1,4 +1,4 @@
-# MyPortFolioNew
+# MyPortfolio
 * 🔗 <a href="https://sewmisithara.github.io/MyPortfolio/"       target="_blank">Portfolio GitHub Page</a>
 
 * 🔗 <a href="https://app.diagrams.net/#G1BNDfuX2Aq7ThTc7IpxDqXJE0zN5i98-7" target="_blank">Site-Map</a>
