@@ -21,7 +21,7 @@ GitHub Pages : https://sewmisithara.github.io/MyPortfolio/ <br> <br>
 
  Desktop View
 <div>
-  <img src="https://github.com/sewmisithara/MyPortfolio/blob/main/assets/readmeImage/ss.jpg" alt="">
+  <img src="https://github.com/sewmisithara/MyPortfolio/blob/main/assest/readmeImage/ss.jpg" alt="">
 <div>
 
 
